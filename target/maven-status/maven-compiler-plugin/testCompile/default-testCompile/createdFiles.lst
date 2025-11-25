@@ -1,0 +1,4 @@
+com/selimhorri/app/ShippingServiceApplicationTests.class
+com/selimhorri/app/integration/ShippingUserIntegrationTest.class
+com/selimhorri/app/integration/ShippingOrderIntegrationTest.class
+com/selimhorri/app/service/OrderItemServiceImplTest.class
