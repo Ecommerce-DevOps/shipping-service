@@ -1,12 +1,5 @@
-
 server:
   port: 8600
-
-management:
-  endpoints:
-    web:
-      exposure:
-        include: "*"
 
 spring:
   datasource:
@@ -41,3 +34,15 @@ logging:
             jpa: DEBUG
             orm: DEBUG
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,prometheus    # Exponer solo lo necesario
+  endpoint:
+    health:
+      show-details: always                 # Peticiones detalladas para Grafana
+  metrics:
+    export:
+      prometheus:
+        enabled: true                      # Activa /actuator/prometheus
